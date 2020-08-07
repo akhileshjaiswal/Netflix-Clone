@@ -1,0 +1,32 @@
+<mat-toolbar>
+    Description
+</mat-toolbar>
+<div class="col-md-12" style="height: 95vh;padding: 0;">
+    <div class="col-md-12 main_div">
+        <div class="col-md-3" style="height: 22em;">
+            <img style="border-radius: 10px;" src="{{poster}}" height="100%" width="100%" alt="">
+        </div>
+        <div class="col-md-9">
+            <h1>{{data.Title}}</h1>
+            <h3>{{data.Year}} {{runtime}}</h3>
+            <div class="col-md-1" style="height: 2em;padding:5px 10px 5px 0px;">
+                <div class='imdb_icon'>
+                    IMDB
+                </div>
+            </div>
+            <div class="col-md-10" style="padding-left: 0;margin-bottom: 10px;margin-right: 4em;">
+                <h3 style="font-weight: 400;opacity: 1;">{{data.imdbRating}}/10</h3>
+            </div>
+            <h3 style="line-height: 18px;margin-top: 10px;">{{data.Plot}}</h3>
+            <h3 style="margin-top: 10px;">Starring: {{data.Actors}}</h3>
+            <h3>Directed By : {{data.Director}}</h3>
+            <div class="col-md-2" style="padding-left: 0;">
+                <div class="sel_btn">
+                    Resume
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 back_img" [ngStyle]="{'background-image': 'url(' + poster + ')'}">
+    </div>
+</div>

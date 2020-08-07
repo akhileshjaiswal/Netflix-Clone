@@ -1,0 +1,9 @@
+<div class="col-md-12" class="main_div">
+    <div class="col-md-2 card_" *ngFor='let card of cards_array'>
+        <mat-card title="{{card.tooltip}}" (click)='onCardSelect(card.id)'>
+            <img style="border-radius: 5px;" height="100%" width="100%" src="{{card.poster}}" alt="">
+        </mat-card>
+        <h4 title="{{card.tooltip}}">{{card.name}}</h4>
+        <h6 title="{{card.year}}">{{card.year}}</h6>
+    </div>
+</div>
